@@ -6,7 +6,7 @@
             <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
             <b-collapse id="nav-collapse" is-nav>
                 <b-navbar-nav>
-                    <b-nav-item href="#" id="navText" v-for="(item,index) in items" :key="index">
+                    <b-nav-item href="#" id="navText" v-for="item in items" :key="item.id">
                         {{item}}
                     </b-nav-item>
                 </b-navbar-nav>
@@ -39,7 +39,5 @@ export default {
 </script>
 
 <style>
-    #navText{
-        font-size: 16px;
-    }
+
 </style>
