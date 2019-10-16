@@ -1,5 +1,25 @@
 <template>
   <div id="app">
+    <vue-particles 
+      color="#7b7d7d" 
+      :particleOpacity="0.7" 
+      :particlesNumber="200" 
+      shapeType="triangle" 
+      :particleSize="1" 
+      linesColor="#203c77" 
+      :linesWidth="1" 
+      :lineLinked="true" 
+      :lineOpacity="0.4" 
+      :linesDistance="100" 
+      :moveSpeed="4" 
+      :hoverEffect="true" 
+      hoverMode="repulse" 
+      :clickEffect="true" 
+      clickMode="push" 
+      class="lizi"
+    >
+    </vue-particles>
+ 
     <Main/>
     <MainContain/>
   </div>
@@ -25,5 +45,12 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+}
+
+.lizi{
+  position: absolute;
+  z-index: -1000;
+  width: 100%;
+  height: 2500px;
 }
 </style>

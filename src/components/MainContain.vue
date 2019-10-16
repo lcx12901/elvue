@@ -1,11 +1,11 @@
 <template>
-    <el-row type="flex" class="row-bg" justify="space-around">
+    <el-row type="flex" class="row-bg" justify="center">
         <el-col :span="3">
             <div class="grid-content bg-purple">
-                <MainContainLeft/>
+                <MainContainLeft id="left"/>
             </div>
         </el-col>
-        <el-col :span="6">
+        <el-col :span="12">
             <div class="grid-content bg-purple-light">
                 <MainContainCenter/>
             </div>
@@ -29,7 +29,10 @@ export default {
         MainContainLeft,
         MainContainCenter,
         MainContainRight
-    }    
+    },
+    methods:{
+
+    }
 }
 </script>
 

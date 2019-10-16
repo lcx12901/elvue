@@ -5,12 +5,16 @@ import BootstrapVue from 'bootstrap-vue'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+import VueParticles from 'vue-particles' 
 import App from './App.vue'
 
 Vue.config.productionTip = false
 
+
 Vue.use(ElementUI);
 Vue.use(BootstrapVue);
+Vue.use(VueParticles);  
 
 new Vue({
   render: h => h(App),

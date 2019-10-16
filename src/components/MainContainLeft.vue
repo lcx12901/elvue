@@ -1,9 +1,9 @@
 <template>
-    <b-nav vertical class="w-75" id="left-nav">
-        <b-nav-item id="nav-item" v-for="item in items" :key="item.id" :class="text-danger">
+    <el-card class="box-card" id="left">
+        <p v-for="item in items" :key="item.id">
             {{item}}
-        </b-nav-item>
-    </b-nav>
+        </p>
+    </el-card>
 </template>
 
 <script>
@@ -17,19 +17,31 @@ export default {
                     '音视频开发','其他']
         }
     },
+    mounted () {
+        window.addEventListener('scroll', this.handleScroll, true)
+    },
     methods:{
-        
+        handleScroll () {
+            var t =document.documentElement.scrollTop||document.body.scrollTop; 
+            var left =document.getElementById("left");
+            if( t >=100) {
+                left.style.position="fixed";
+                left.style.top="30px";
+            }else{
+                left.style.position="";
+            }
+        }
     }
 }
 </script>
 
 <style>
-    #left-nav{
-        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
-    }
-    #nav-item{
-        font-size: 14px;
-        height: 35px;
-    }
+#left{
+    width: 120px;
+}
+#left p{
+    font-size: 4px;
+    margin: 10px 0;
+}
 
 </style>
