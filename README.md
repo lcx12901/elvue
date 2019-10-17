@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # bootstrapvue
 
 ## Project setup
@@ -27,3 +28,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# elvue
+>>>>>>> d079bca7a64e6862a715ccd83ef647f66fcefa9b
