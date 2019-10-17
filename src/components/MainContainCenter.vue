@@ -7,7 +7,7 @@
                         <el-image
                             style="width: 500px; height: 150px"
                             :src="pic"
-                            :fit="fill"
+                            fit="fill"
                         ></el-image>
                     </el-carousel-item>
                 </el-carousel>
@@ -20,7 +20,7 @@
                 </div>
             </el-col>
         </el-row>
-        <el-card id="centerCard" v-for="i in 50" :key="i.id">
+        <el-card id="centerCard" v-for="i in 40" :key="i.id">
             <h5 class="title">
                 <b>{{titles[0]}}</b>
             </h5>
@@ -62,15 +62,13 @@ export default {
                 require('../assets/nnkj.png')
             ],
             titles:[
-                '5G 芯片的“春秋五霸”',
+                '世界名菜推出：大浪炒蒜、块鸡炒姜丝',
                 'AI芯片总体上呈现出“百花齐放、百家争鸣”的格局，但5G芯片却大相径庭，能够推出5G手机基带芯片的厂商只有华为/联发科/高通/展讯/三星五家，这“五霸”谁才是霸中之霸，在5G时代还不好说。'
             ]
         }
     },
     methods: {
-        load(){
-            this.count += 2
-        }
+        
     }
 }
 </script>
@@ -86,7 +84,7 @@ export default {
 .title{
     position: relative;
     left: 0;
-    width: 270px;
+    width: 500px;
 }
 .summ {
     overflow: hidden;

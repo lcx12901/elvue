@@ -6,7 +6,10 @@ import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 
-import VueParticles from 'vue-particles' 
+import VueParticles from 'vue-particles'
+
+import 'default-passive-events'
+
 import App from './App.vue'
 
 Vue.config.productionTip = false

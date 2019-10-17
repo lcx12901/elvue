@@ -11,7 +11,7 @@
       :lineLinked="true" 
       :lineOpacity="0.4" 
       :linesDistance="100" 
-      :moveSpeed="4" 
+      :moveSpeed="15" 
       :hoverEffect="true" 
       hoverMode="repulse" 
       :clickEffect="true" 
@@ -19,21 +19,23 @@
       class="lizi"
     >
     </vue-particles>
- 
     <Main/>
     <MainContain/>
+    <Dialog/>
   </div>
 </template>
 
 <script>
 import Main from './components/Bar.vue'
 import MainContain from './components/MainContain.vue'
+import Dialog from './components/Dialog.vue'
 
 export default {
   name: 'app',
   components: {
     Main,
-    MainContain
+    MainContain,
+    Dialog
   }
 }
 </script>
@@ -51,6 +53,6 @@ export default {
   position: absolute;
   z-index: -1000;
   width: 100%;
-  height: 2500px;
+  height: 6000px;
 }
 </style>
